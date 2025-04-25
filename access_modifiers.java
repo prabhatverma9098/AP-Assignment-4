@@ -1,4 +1,3 @@
-// Base class with different access modifiers
 class AccessModifierDemo {
     public void publicMethod() {
         System.out.println("Public method called.");
@@ -18,7 +17,6 @@ class AccessModifierDemo {
     }
 }
 
-// Subclass in the same package
 class SubClass extends AccessModifierDemo {
     public void accessMethodsInSubclass() {
         System.out.println("Inside subclass:");
@@ -27,8 +25,6 @@ class SubClass extends AccessModifierDemo {
         // privateMethod();   // Not accessible - would cause a compilation error
     }
 }
-
-// Class in the same package but not a subclass
 class SamePackageClass {
     public void accessMethods() {
         AccessModifierDemo obj = new AccessModifierDemo();
@@ -39,7 +35,6 @@ class SamePackageClass {
     }
 }
 
-// Main class
 public class AccessTest {
     public static void main(String[] args) {
         AccessModifierDemo demo = new AccessModifierDemo();
